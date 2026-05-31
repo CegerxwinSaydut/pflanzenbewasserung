@@ -53,9 +53,9 @@ pflanzenbewasserung/
 ```
 
 ## Screenshot des Clients
-```markdown
+
 ![Screenshot des Clients](./client/pflanzebewaesserung_screen.png)
-```
+
 
 ## Serverseitige Applikation
 
