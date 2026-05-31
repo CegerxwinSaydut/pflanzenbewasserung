@@ -33,7 +33,7 @@ const updateDom = (state) => {
       `${state.weather.outsideHumidity} %`;
 
     document.querySelector("#rain").innerText =
-      `${state.weather.rain} mm`;
+      `${state.weather.precipitation.toFixed(2)} mm`;
 
     document.querySelector("#wind").innerText =
       `${state.weather.windSpeed} km/h`;
