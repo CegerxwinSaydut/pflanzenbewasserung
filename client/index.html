@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pflanzenbewässerung</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
+  </head>
+
+  <body>
+    <main class="site">
+      <h1>Pflanzenbewässerung</h1>
+
+      <section class="dashboard">
+
+	<div class="cardOnline">
+	 <h2>Online Wetter</h2>
+          <p>Temperatur: <span id="outside-temperature">--</span></p>
+          <p>Luftfeuchtigkeit: <span id="outside-humidity">--</span></p>
+          <p>Regen: <span id="rain">--</span></p>
+          <p>Wind: <span id="wind">--</span></p>
+          <p>Wolken: <span id="clouds">--</span></p>
+        </div>
+       <div class="cardNormal">
+
+        <article class="card">
+          <h2>Bodenfeuchtigkeit</h2>
+          <p id="moisture" class="value">-- %</p>
+        </article>
+
+        <article class="card">
+          <h2>Pumpe</h2>
+          <p id="pump" class="value">--</p>
+        </article>
+
+        <article class="card">
+          <h2>Automatik</h2>
+          <p id="auto-mode" class="value">--</p>
+        </article>
+
+        <article class="card">
+          <h2>Grenzwert</h2>
+          <p id="threshold" class="value">-- %</p>
+        </article>
+
+	<article class="card">
+          <h2>Temperatur</h2>
+          <p id="temperature" class="value">-- °C</p>
+	 </article>
+	
+	<article class="card">
+          <h2>Luftfeuchtigkeit</h2>
+          <p id="humidity" class="value">-- %</p>
+         </article>
+	</div>
+      </section>
+
+      <section class="controls">
+        <button id="water-btn">Manuell bewässern</button>
+        <button id="auto-btn">Automatik umschalten</button>
+
+        <div class="input-group">
+          <label for="threshold-input">Neuer Grenzwert</label>
+          <input id="threshold-input" type="number" min="0" max="100" />
+          <button id="threshold-btn">Speichern</button>
+        </div>
+
+        <div class="input-group">
+          <label for="moisture-input">Feuchtigkeit simulieren</label>
+          <input id="moisture-input" type="number" min="0" max="100" />
+          <button id="moisture-btn">Simulieren</button>
+        </div>
+      </section>
+
+      <p id="message" class="message"></p>
+    </main>
+  </body>
+</html>

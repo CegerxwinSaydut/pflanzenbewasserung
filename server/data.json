@@ -1,0 +1,7 @@
+{
+  "moisture": 42,
+  "pumpOn": false,
+  "autoMode": true,
+  "threshold": 35,
+  "lastWatering": null
+}
